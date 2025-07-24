@@ -9,7 +9,7 @@ const cartItems = new Set();
 window.addEventListener("DOMContentLoaded", () => {
     const savedCart = localStorage.getItem("cart");
     const savedCartItems = localStorage.getItem("cartItems");
-    if (savedCartItems) {   
+    if (savedCartItems) {
         const items = JSON.parse(savedCartItems);
         cart(items)
     }
@@ -24,7 +24,7 @@ window.addEventListener("DOMContentLoaded", () => {
 function saveCart() {
     const cartHTML = document.getElementById("cart-section").innerHTML;
     localStorage.setItem("cart", cartHTML);
-    localStorage.setItem("cartItems",JSON.stringify(Array.from(cartItems)));
+    localStorage.setItem("cartItems", JSON.stringify(Array.from(cartItems)));
 }
 
 function getTotalCartQty() {
@@ -42,16 +42,24 @@ function addToCart(productID) {
     const cartContainer = document.getElementById("cart-container");
     const cartItemContainer = document.getElementById("cart-section");
 
-console.log(cartItems);
-    
+    console.log(cartItems);
+
     // Open cart
     cartContainer.style.width = "30%";
+
+    const cartViewBtn = cartItemContainer.querySelector("#cart_icon");
+    cartViewBtn.addEventListener("click",()=>{
+       alert("KSJb")
+    })
 
     // Cart close button
     const cartCloseButton = document.getElementById("closed-btn");
     cartCloseButton.addEventListener("click", () => {
         cartContainer.style.width = "0%";
     });
+
+
+
 
     // Check if product already added
     if (cartItems.has(productID)) {

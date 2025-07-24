@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="output.css" rel="stylesheet">
+    <link href="/src/output.css" rel="stylesheet">
     <!------------------------------------ swiper js link section  --------------------------------->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/src/style.css">
     <title>WearUp</title>
 
 </head>
@@ -214,9 +214,7 @@
                     <li
                         class=" relative ">
                         <div id="cart_item_counter" class="absolute top-[-6px] right-[-5px] w-4 h-4 rounded-4xl text-white text-xs text-center z-10 bg-black ">0</div>
-                        <a href="cart.html">
-                            <ion-icon name="cart-outline" class="w-6 h-6"></ion-icon>
-                        </a>
+                            <ion-icon name="cart-outline" id="cart_icon" class="w-6 h-6"></ion-icon>
                     </li>
                 </ul>
             </div>
@@ -229,7 +227,7 @@
 
     <div class=" h-[50vh] xs:h-[70vh] md:h-[110vh] w-full pt-28">
         <div class="hero-container px-6 lg:px-12 w-full h-full flex items-center justify-start bg-no-repeat bg-cover bg-left"
-            style="background-image: url(img/h2.jpg);">
+            style="background-image: url(/img/h2.webp);">
             <div class="hero-content flex items-center justify-between flex-col gap-2 md:gap-4">
                 <h1
                     class="text-xl font-semibold md:text-3xl lg:text-[4vw]  text-center lg:w-[45vw] leading-8 md:leading-10 lg:leading-16 ">
@@ -455,12 +453,12 @@
     <!------------------------------------------------------- Brands section  ---------------------------------------------->
     <div
         class="w-full h-fit py-10 border-[#8e8787ce] border-y-[1.5px] flex flex-wrap items-center justify-between  px-6 lg:px-16 gap-[4vw] md:gap-[10vw] mt-20 ">
-        <img src="/src/img/brand-logo-1.png" alt="">
-        <img src="/src/img/brand-logo-2.png" alt="">
-        <img src="/src/img/brand-logo-3.png" alt="">
-        <img src="/src/img/brand-logo-4.png" alt="">
-        <img src="/src/img/brand-logo-5.png" alt="">
-        <img src="/src/img/brand-logo-6.png" alt="">
+        <img src="/img/brand-logo-1.png" alt="">
+        <img src="/img/brand-logo-2.png" alt="">
+        <img src="/img/brand-logo-3.png" alt="">
+        <img src="/img/brand-logo-4.png" alt="">
+        <img src="/img/brand-logo-5.png" alt="">
+        <img src="/img/brand-logo-6.png" alt="">
     </div>
 
     <!----------------------------------------- Testimonial section  --------------------------------------->
@@ -764,7 +762,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <!----------------------------------------- Javascript link section  ----------------------------->
-    <script type="module" src="main.js"></script>
+    <script type="module" src="/src/main.js"></script>
     
     
     <script>
