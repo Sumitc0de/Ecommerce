@@ -1,0 +1,110 @@
+export const clothSet =  [
+    {
+        "id": 1,
+        "productName": "Men's Half Sleeve T-Shirt",
+        "category": "T-Shirts",
+        "price": "57,000.00",
+        "stock": 10,
+        "sizes": ["S", "M", "L", "XL"],
+        "description": "Comfortable and stylish half sleeve t-shirt made from premium cotton.",
+        "image": "/src/img/clothes/shirt1.webp",
+        "rating": "4.6",
+        "reviews": 120
+    },
+    {
+        "id": 2,
+        "productName": "Women's Casual Dress",
+        "category": "Dresses",
+        "price": "15,000.00",
+        "stock": 15,
+        "sizes": ["XS", "S", "M", "L"],
+        "description": "Elegant casual dress perfect for summer evenings.",
+        "image": "/src/img/clothes/dress1.webp",
+        "rating": 4.7,
+        "reviews": 85
+    },
+    {
+        "id": 3,
+        "productName": "Unisex Cap",
+        "category": "Accessories",
+        "price": "2,500.00",
+        "stock": 30,
+        "sizes": "S",
+        "description": "Stylish and comfortable cap for any occasion.",
+        "image":"/src/img/clothes/cap1.webp",
+        "rating": 4.2,
+        "reviews": 60
+    },
+    {
+        "id": 4,
+        "productName": "Men's Hoodie",
+        "category": "Hoodies",
+        "price": "19,599.00",
+        "stock": 8,
+        "sizes": ["M", "L", "XL"],
+        "description": "Warm and comfortable hoodie for chilly weather.",
+        "image":"/src/img/clothes/tshirt2.webp",
+        "rating": 4.8,
+        "reviews": 45
+    },
+    {
+        "id": 5,
+        "productName": "Women's Summer Dress",
+        "category": "Dresses",
+        "price": "66,000.00",
+        "stock": 5,
+        "sizes": ["S", "M"],
+        "description": "Light and breezy summer dress perfect for any occasion.",
+        "image":"/src/img/clothes/dress3.png",
+        "rating": 4.6,
+        "reviews": 30
+    },
+    {
+        "id": 6,
+        "productName": "Women's Summer Dress",
+        "category": "Dresses",
+        "price": "66,000.00",
+        "stock": 5,
+        "sizes": ["S", "M"],
+        "description": "Light and breezy summer dress perfect for any occasion.",
+        "image":"/src/img/clothes/dress2.webp",
+        "rating": 4.6,
+        "reviews": 30
+    },
+    {
+        "id": 7,
+        "productName": "Women's Summer Dress",
+        "category": "Dresses",
+        "price": "66,000.00",
+        "stock": 5,
+        "sizes": ["S", "M"],
+        "description": "Light and breezy summer dress perfect for any occasion.",
+        "image":"/src/img/clothes/tshirt3.png",
+        "rating": 4.6,
+        "reviews": 30
+    },
+    {
+        "id": 8,
+        "productName": "Women's Summer Dress",
+        "category": "Dresses",
+        "price": "66,000.00",
+        "stock": 5,
+        "sizes": ["S", "M"],
+        "description": "Light and breezy summer dress perfect for any occasion.",
+        "image":"/src/img/clothes/tshirt3.png",
+        "rating": 4.6,
+        "reviews": 30
+    },
+    {
+        "id": 9,
+        "productName": "Women's Summer Dress",
+        "category": "Dresses",
+        "price": "66,000.00",
+        "stock": 5,
+        "sizes": ["S", "M"],
+        "description": "Light and breezy summer dress perfect for any occasion.",
+        "image":"/src/img/clothes/tshirt3.png",
+        "rating": 4.6,
+        "reviews": 30
+    }
+]

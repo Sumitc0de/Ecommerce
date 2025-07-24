@@ -1,0 +1,86 @@
+
+#heart.hidden{
+   display: none; 
+}
+
+#heart-dislike.heart-display{
+    display: block;
+    color: white;
+}
+
+header nav ul li:hover .drop-down{
+    display: flex;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+
+.no-scroll{
+    overflow: hidden;
+}
+
+
+/* Default styles for the cart section */
+#cart-container {
+    position: fixed;
+    z-index: 999999;
+    right: 0;
+    top: 0;
+    width: 0; /* Initially hidden */
+    height: 100%; /* Full height for all devices */
+    background-color: white;
+    border-left: 1px solid #857d7d9e;
+    overflow: hidden;
+    transition: width 0.3s ease-in-out;
+}
+
+/* Show the cart section */
+#cart-container.show {
+    width: 100%; /* Full width for mobile devices */
+}
+
+#cart-section{
+    height: 20vw;
+}
+
+@media (min-width: 768px) {
+    #cart-container.show {
+        width: 50%; /* Adjust width for tablets */
+    }
+}
+
+@media (min-width: 1024px) {
+    #cart-container.show {
+        width: 30%; /* Adjust width for desktops */
+    }
+}
+
+/* Cart section content overflow handling */
+#cart-section {
+    width: 100%;
+    height: calc(100% - 100px); /* Adjust height to account for the header and footer */
+    overflow-y: scroll; /* Enable scrolling for cart items */
+    padding-bottom: 120px;
+}
+
+/* Cart header */
+#cart-container .cart-header {
+    width: 100%;
+    height: 60px;
+    background-color: #f44336; /* Red background for the header */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    color: white;
+    font-size: 16px;
+}
+
+/* Close button */
+#cart-container #closed-btn {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
