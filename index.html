@@ -28,26 +28,25 @@
     <header id="header" class=" h-fit bg-[#FFFFFF]  w-full fixed ease-in duration-200" style="z-index: 9999;">
 
         <!-- Mobile Menu Bar Section  -->
-        <div id="mobile-menu-section" class="fixed w-0 h-screen bg-white z-50 hidden ease-in-out duration-300">
+        <div id="mobile-menu-section" class="fixed top-0 w-full h-screen bg-white z-50 hidden ease-in-out duration-300">
             <div class="w-full h-16 inline-flex items-center justify-between px-4 bg-red-200">
                 <h1 class="text-xl font-semibold">WearUp</h1>
                 <ion-icon name="close-outline" id="close-icon" class="w-8 h-8 p-2 "></ion-icon>
             </div>
+            
+            <ul class="flex flex-wrap flex-col mt-5 items-center justify-center gap-6 text-lg font-medium ">
+                <li><a href="#" class="hover:text-blue-600 transition-colors duration-200">Men</a></li>
+                <li><a href="#" class="hover:text-blue-600 transition-colors duration-200">Women</a></li>
+                <li><a href="#" class="hover:text-blue-600 transition-colors duration-200">Accessories</a></li>
+                <li><a href="#" class="hover:text-blue-600 transition-colors duration-200">Shoes</a></li>
+                <li><a href="#" class="hover:text-blue-600 transition-colors duration-200">Collection</a></li>
+            </ul>
+
+
 
         </div>
 
-        <div class="top-header-side w-full h-10 flex items-center  justify-between px-6 md:px-12 bg-[#FFF2EF]">
-            <div class="left-top items-center justify-self-end gap-6 hidden sm:flex">
-                <p class="inline-flex items-center justify-center gap-4 text-sm text-gray-700"> &#9990; +91XXXXXXXXXX
-                </p>
-                <p class="inline-flex items-center justify-center gap-4 text-sm text-gray-700"> <ion-icon
-                        name="mail-unread-outline"></ion-icon> Wearup@me.com</p>
-            </div>
 
-            <div class="right-top">
-                <p class="text-sm">Free <b>Delivery</b> on orders over $200</p>
-            </div>
-        </div>
 
         <div class="middle-header-side flex items-center justify-between h-20 px-6 md:px-12">
             <div class="menu-section lg:hidden w-6 h-6 ">
@@ -297,7 +296,7 @@
             <h1 class="text-center m-2 lg:text-3xl font-semibold ">Featured Products</h1>
             <p class="text-center  lg:text-sm">We have your occasion covered</p>
 
-        <div id="product-container" class="flex bg-amber-500 flex-wrap items-center gap-6 justify-center mt-12 px-4">
+            <div id="product-container" class="flex  flex-wrap items-center gap-6 justify-between mt-12 ">
 
 
                 <!-- <div id="product-box" class="w-[23%] lg:h-[30vw] bg-red-300 rounded-xl overflow-hidden" >
@@ -423,7 +422,7 @@
 
         <!----------------------------------------------------Cart Section  ---------------------------------->
         <div id="cart-container"
-            class="fixed z-[999999] right-0 top-0 w-full h-full lg:h-full lg:w-0 overflow-hidden ease-in duration-50 bg-white border-l-[1px] border-[#857d7d9e]">
+            class="fixed z-[999999] right-0 top-0 w-80 h-full lg:h-full lg:w-0 overflow-hidden ease-in duration-50 bg-white border-l-[1px] border-[#857d7d9e]">
 
             <!-- w-full h-16 bg-red-500 flex items-center justify-between px-6 -->
 
@@ -435,8 +434,6 @@
             </div>
 
             <div id="cart-section" class="w-full h-[80vh]  px-3 pt-3  ">
-
-
             </div>
 
             <div id="total-amt-sec"
@@ -446,7 +443,9 @@
                     <p id="total_price" class="text-xl">Price</p>
                 </div>
                 <div class="w-full h-[50%] flex items-center justify-center gap-6">
-                    <button id="check_out" class="w-full h-full bg-black flex items-center justify-center text-white border border-[#000000a7] rounded-sm hover:-translate-y-0.5 transition-transform ease-in duration-150">  Check Out</button>
+                    <button id="check_out"
+                        class="w-full h-full bg-black flex items-center justify-center text-white border border-[#000000a7] rounded-sm hover:-translate-y-0.5 transition-transform ease-in duration-150">
+                        Check Out</button>
                 </div>
 
             </div>

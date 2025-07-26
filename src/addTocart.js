@@ -80,7 +80,7 @@ function addToCart(productID) {
     const cartContainer = document.getElementById("cart-container");
     const cartItemContainer = document.getElementById("cart-section");
 
-    cartContainer.style.width = "30%";
+    cartContainer.style.width = "100vw";
 
     const cartCloseButton = document.getElementById("closed-btn");
     cartCloseButton.addEventListener("click", () => {
