@@ -1,5 +1,5 @@
 import { clothSet } from './products.js';
-import viewProduct from './viewProduct.js';
+// import viewProduct from './viewProduct.js';
 import addToCart from './addTocart.js';
 
 
@@ -29,7 +29,7 @@ const productListing = () => {
     for (let i = 0; i <= clothSet.length; i++) {
         const product1 = document.createElement("div");
         product1.id = 'product-box';
-        product1.className = "w-[23%] lg:h-[30vw]  rounded-xl overflow-hidden";
+        product1.className = "w-[100%] lg:h-[30vw]  rounded-xl overflow-hidden";
         product1.innerHTML = `
             <div id="product-image" class="w-full h-[80%] relative cursor-pointer overflow-hidden">
                 <img src="${clothSet[i].image}" alt="shirt1" class="object-cover w-full h-full hover:scale-105 ease-out duration-200">
@@ -38,7 +38,7 @@ const productListing = () => {
                     <ul class="flex items-center justify-center gap-2">
                         <li id="add_to_cart" class="px-3 py-3 flex items-center justify-center rounded-4xl bg-white border-[1px] border-gray-600 hover:drop-shadow-md duration-200 ease-in-out hover:shadow-2xl"><ion-icon name="add-outline"></ion-icon></li>
 
-                        <li id="view_product" class="px-3 py-3 flex items-center justify-center rounded-4xl bg-white border-[1px] border-gray-600 hover:drop-shadow-md duration-200 ease-in-out hover:shadow-2xl"><ion-icon name="eye-outline"></ion-icon></li>
+                       
 
                         <li id="wishlist" class="px-3 py-3 flex items-center justify-center rounded-4xl bg-white border-[1px] border-gray-600 hover:drop-shadow-md duration-200 ease-in-out hover:shadow-2xl"><ion-icon name="heart-outline"></ion-icon></li>
                     </ul>
@@ -54,14 +54,11 @@ const productListing = () => {
         const productContainer = document.getElementById("product-container")
         productContainer.appendChild(product1)
 
-        product1.querySelector("#view_product").addEventListener("click", () => {
-            viewProduct(clothSet[i].id);
-        })
 
         // let isProductAdded = false;
         product1.querySelector("#add_to_cart").addEventListener("click", () => {
             addToCart(clothSet[i].id);
-            
+
         });
 
 
@@ -97,21 +94,25 @@ const productListing = () => {
 
         document.getElementById("sales-container").appendChild(product2);
 
-          product2.querySelector("#add_to_cart").addEventListener("click", () => {
+        product2.querySelector("#add_to_cart").addEventListener("click", () => {
             addToCart(clothSet[i].id);
         });
 
     }
 }
-    const cartItemContainer = document.getElementById("cart-section");
-    const cartContainer = document.getElementById("cart-container");
+
+const cart_icon = document.querySelector("#cart_icon");
+const cartCloseBtn = document.querySelector("#closed-btn");
+cartCloseBtn.addEventListener("click", () => {
+    document.getElementById("cart-container").style.width = "0%";
+})
+cart_icon.addEventListener("click", (e) => {
+    document.getElementById("cart-container").style.width = "30%";
+})
 
 
-  const cartViewBtn = cartItemContainer.querySelector("#cart_icon");
-    cartViewBtn.addEventListener("click",()=>{
-       alert("KSJb");
-       console.log("Sibi")
-    })
+
+
 
 
 productListing();
