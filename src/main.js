@@ -30,15 +30,15 @@ function toggleMenu() {
     const MenuIcon = document.getElementById("menu-icon");
     const CloseIcon = document.getElementById("close-icon");
     const MenuSection = document.getElementById("mobile-menu-section");
-   MenuIcon.addEventListener("click", () => {
+    MenuIcon.addEventListener("click", () => {
         MenuSection.style.display = 'block';
-       
+
     });
-    
+
     CloseIcon.addEventListener('click', () => {
-       
-                MenuSection.style.display = 'none';
-         
+
+        MenuSection.style.display = 'none';
+
     });
 }
 
@@ -127,8 +127,13 @@ const cartCloseBtn = document.querySelector("#closed-btn");
 cartCloseBtn.addEventListener("click", () => {
     document.getElementById("cart-container").style.width = "0%";
 })
-cart_icon.addEventListener("click", (e) => {
-    document.getElementById("cart-container").style.width = "30%";
+cart_icon.addEventListener("click", () => {
+    if (window.innerWidth <= 768) {
+        document.getElementById("cart-container").style.width = "100%";  // On mobile
+    } else {
+        document.getElementById("cart-container").style.width = "30%";   // On desktop
+    }
+
 })
 
 

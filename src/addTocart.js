@@ -80,7 +80,11 @@ function addToCart(productID) {
     const cartContainer = document.getElementById("cart-container");
     const cartItemContainer = document.getElementById("cart-section");
 
-    cartContainer.style.width = "100vw";
+    if (window.innerWidth <= 768) {
+    cartContainer.style.width = "100%";  // On mobile
+} else {
+    cartContainer.style.width = "30%";   // On desktop
+}
 
     const cartCloseButton = document.getElementById("closed-btn");
     cartCloseButton.addEventListener("click", () => {
@@ -92,7 +96,7 @@ function addToCart(productID) {
     cartItems.add(productID);
 
     const cartItem = document.createElement('div');
-    cartItem.className = "my-2 w-full h-[12vw] flex items-center justify-center border-[1px] border-[#857d7d9e] rounded-sm overflow-hidden";
+    cartItem.className = "my-2 w-full h-[12vw] xs:h-[25vh] flex items-center justify-center border-[1px] border-[#857d7d9e] rounded-sm overflow-hidden";
     cartItem.innerHTML = `
         <div class="w-[40%] h-full bg-cover bg-center" style="background-image: url(${product.image});"></div>
         <div class="w-[60%] h-full px-4 pt-1">
