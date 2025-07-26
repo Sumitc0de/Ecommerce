@@ -29,7 +29,7 @@ const productListing = () => {
     for (let i = 0; i <= clothSet.length; i++) {
         const product1 = document.createElement("div");
         product1.id = 'product-box';
-        product1.className = "xs:w-[100%] md:w-[25%] lg:h-[30vw] rounded-xl overflow-hidden";
+        product1.className = "xs:w-[100%] md:w-[20%] lg:h-[30vw] rounded-xl overflow-hidden";
         product1.innerHTML = `
             <div id="product-image" class="w-full h-[80%] relative cursor-pointer overflow-hidden">
                 <img src="${clothSet[i].image}" alt="shirt1" class="object-cover w-full h-full hover:scale-105 ease-out duration-200">
