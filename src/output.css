@@ -597,14 +597,14 @@
   .h-\[3\.5vw\] {
     height: 3.5vw;
   }
-  .h-\[12vw\] {
-    height: 12vw;
-  }
   .h-\[16\%\] {
     height: 16%;
   }
   .h-\[20\%\] {
     height: 20%;
+  }
+  .h-\[25vh\] {
+    height: 25vh;
   }
   .h-\[45vh\] {
     height: 45vh;
@@ -653,9 +653,6 @@
   }
   .min-h-screen {
     min-height: 100vh;
-  }
-  .w-1 {
-    width: calc(var(--spacing) * 1);
   }
   .w-1\/2 {
     width: calc(1/2 * 100%);
@@ -1664,9 +1661,6 @@
   .px-8 {
     padding-inline: calc(var(--spacing) * 8);
   }
-  .py-1 {
-    padding-block: calc(var(--spacing) * 1);
-  }
   .py-1\.5 {
     padding-block: calc(var(--spacing) * 1.5);
   }
@@ -2450,19 +2444,9 @@
       height: 20vw;
     }
   }
-  .xs\:h-\[25vh\] {
-    @media (width >= 30rem) {
-      height: 25vh;
-    }
-  }
   .xs\:h-\[70vh\] {
     @media (width >= 30rem) {
       height: 70vh;
-    }
-  }
-  .xs\:h-\[100px\] {
-    @media (width >= 30rem) {
-      height: 100px;
     }
   }
   .xs\:w-\[48\%\] {
@@ -2486,9 +2470,10 @@
       line-height: var(--tw-leading, var(--text-2xl--line-height));
     }
   }
-  .sm\:h-\[100px\] {
-    @media (width >= 40rem) {
-      height: 100px;
+  .xs\:text-sm {
+    @media (width >= 30rem) {
+      font-size: var(--text-sm);
+      line-height: var(--tw-leading, var(--text-sm--line-height));
     }
   }
   .sm\:w-28 {
@@ -2517,9 +2502,19 @@
       line-height: var(--tw-leading, var(--text-2xl--line-height));
     }
   }
+  .md\:flex {
+    @media (width >= 48rem) {
+      display: flex;
+    }
+  }
   .md\:h-20 {
     @media (width >= 48rem) {
       height: calc(var(--spacing) * 20);
+    }
+  }
+  .md\:h-\[12vw\] {
+    @media (width >= 48rem) {
+      height: 12vw;
     }
   }
   .md\:h-\[20vw\] {

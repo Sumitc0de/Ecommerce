@@ -96,18 +96,20 @@ function addToCart(productID) {
     cartItems.add(productID);
 
     const cartItem = document.createElement('div');
-    cartItem.className = "my-2 w-full h-[12vw] xs:h-[25vh] flex items-center justify-center border-[1px] border-[#857d7d9e] rounded-sm overflow-hidden";
+    cartItem.className = "my-2 w-full md:h-[12vw] h-[25vh] flex items-center justify-center border-[1px] border-[#857d7d9e] rounded-sm overflow-hidden";
     cartItem.innerHTML = `
-        <div class="w-[40%] h-full bg-cover bg-center" style="background-image: url(${product.image});"></div>
+        <div class="w-[40%] h-full bg-cover bg-center">
+        <img src="${product.image}" alt="${product.productName}" class="w-full h-full object-cover">
+        </div>
         <div class="w-[60%] h-full px-4 pt-1">
-            <p class="text-gray-900 font-semibold">${product.productName}</p>
+            <p class="text-gray-900 xs:text-sm font-semibold">${product.productName}</p>
             <div class="w-full h-2 py-3 flex items-center gap-5">
                 <p class="text-gray-900 font-semibold">Color: <span class="font-normal">${product.color || 'N/A'}</span></p>
                 <p class="text-gray-900 font-semibold">Size: <span class="font-normal">${product.sizes}</span></p>
             </div>
             <p>Rs. ${product.price.toLocaleString('en-IN')}</p>
             <div class="flex items-center justify-start w-[9vw] h-[3.5vw] bg-[#F6F6F6] border-[1px] border-[#857d7d9e] rounded-xs overflow-hidden mt-4">
-                <div class="w-[70%] h-full bg-white flex items-center gap-2 justify-between px-4 text-gray-700">
+                <div class="w-[70%] h-full bg-white hidden md:flex items-center gap-2 justify-between px-4 text-gray-700">
                     <ion-icon name="add-outline" class="add-outline cursor-pointer text-lg w-5 h-5"></ion-icon>
                     <p class="qty">1</p>
                     <ion-icon name="remove-outline" class="remove-outline cursor-pointer text-lg w-5 h-5"></ion-icon>
