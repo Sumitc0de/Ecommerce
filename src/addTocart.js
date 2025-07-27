@@ -104,8 +104,8 @@ function addToCart(productID) {
         <div class="w-[60%] h-full px-4 pt-1">
             <p class="text-gray-900 xs:text-sm font-semibold">${product.productName}</p>
             <div class="w-full h-2 py-3 flex items-center gap-5">
-                <p class="text-gray-900 font-semibold">Color: <span class="font-normal">${product.color || 'N/A'}</span></p>
-                <p class="text-gray-900 font-semibold">Size: <span class="font-normal">${product.sizes}</span></p>
+                <p class="text-gray-900 xs:text-sm md:font-semibold">Color: <span class="font-normal">${product.color || 'N/A'}</span></p>
+                <p class="text-gray-900 xs:text-sm md:font-semibold">Size: <span class="font-normal">${product.sizes}</span></p>
             </div>
             <p>Rs. ${product.price.toLocaleString('en-IN')}</p>
             <div class="flex items-center justify-start w-[9vw] h-[3.5vw] bg-[#F6F6F6] border-[1px] border-[#857d7d9e] rounded-xs overflow-hidden mt-4">
